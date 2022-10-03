@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200&family=Montserrat:wght@100;200&display=swap');
+
+/* ------------ FONTS ------------ */
+:root {
+  --text-normal: 'Montserrat', sans-serif;
+  /* Reading Mode */
+  --text: 'Montserrat', sans-serif;
+  --font-mono: 'JetBrains+Mono';
+
+  /* Editor - Live Preview */
+  --text-live-preview: var(--text-normal);
+
+  --text-editor: var(--text-normal);
+  
+  /* Code */
+  --font-monospace: var(--text);
+
+  /* UI Elements (non-Preview, non-Editor) */
+  --font-ui: var(--text);
+  --font-editor-theme: var(--text);
+  /* --font-text-theme: var(--text); */
+  
+}
+
+/* --- SIZES, WEIGHTS, PADDING --- */
+/*       adapted from Minimal      */    
+/* change these variables to modify the theme */
+
+:root {
+  --font-normal: 16px;
+  --font-small: 13px;
+  --font-smaller: 11px;
+  --font-smallest: 10px;
+
+  --h1: 1.4em;
+  --h2: 1.4em;
+  --h3: 1.4em;
+  --h4: 1.4em;
+  --h5: 1.4em;
+  --h6: 1.4em;
+
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 550;
+  --h4-weight: 550;
+  --h5-weight: 550;
+  --h6-weight: 550;
+
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+
+  --normal-weight: 500;
+  --bold-weight: 620;
+  --line-width: 40rem; /* Maximum characters per line */
+  --line-height: 1.5;
+  --max-width: 88%; /* Amount of padding around the text, use 90% for narrower padding */
+  --icon-muted: 0.5;
+  --border-width: 1px;
+  --border-width-alt: 1px;
+
+  --radius-s: 2px;
+  --radius-m: 5px;
+  --radius-l: 10px;
+
+  --input-height: 32px;
+  --header-height: 40px;
+
+  --yellow: #e5b567;
+  --green: #b4d273;
+  --orange: #e87d3e;
+  --purple: #9e86c8;
+  --pink: #b05279;
+  --blue: #6c99bb;
+
+
+  --text-heading-tags: #659fa1;
+  --text-title-h1: #e7cc8c;
+	--text-title-h2: #dea573;
+	--text-title-h3: #cb9758;
+	--text-title-h4: #ce815d;
+	--text-title-h5: #ce6e5d;
+	--text-title-h6: #ce5d5d;
+  --text-tags: #ecc084;
+  --text-link: #659fa1;
+}
+
+:root {
+  --base-h: 220;
+  --base-s: 10%;
+  --base-d: 14%; /* base lightness for dark mode. 0 is black */
+  --base-l: 0%; /* base lightness for light mode. 100 is white */
+  /* accent colors (sea green by default) */
+  --accent-h: 200;
+  --accent-s: 51.9%;
+  --accent-d: 50.7%; /* Accent lightness Dark Mode */
+  --accent-l: 46.7%; /* Accent lightness Light Mode */
+  /* Code color (non-HSL) */
+  --text-code: #7693a4;
+}
+
+body {
+  --font-adaptive-normal: 1em;
+  --font-adaptive-small: var(--font-small);
+  --font-adaptive-smaller: var(--font-smaller);
+  --font-adaptive-smallest: var(--font-smallest);
+  --line-width-adaptive: var(--line-width);
+  font-family: var(--font-ui);
+}
+
+
+/* ---------- DARK THEME ---------- */
+.theme-dark {
+
+  --background-primary: hsl(var(--base-h),var(--base-s),var(--base-d));
+  --background-primary-alt: #202020;
+
+  --background-secondary: rgb(30,30,30);
+  --background-secondary-alt: #000000;
+  --background-modifier-border: #333;
+  --background-modifier-border-hover: rgb(94, 94, 94);
+  --background-modifier-border-focus: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 60%)
+  );
+  --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --background-modifier-headers-border: rgb(67, 70, 99);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-success: #197300;
+  --background-modifier-error: #3d0000;
+  --background-modifier-error-rgb: 61, 0, 0;
+  --background-modifier-error-hover: #470000;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+
+  --vim-cursor: hsla(var(--accent-h), var(--accent-s), var(--accent-d), 0.8);
+  --text-accent: rgb(99, 160, 235);
+  --text-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-d) - 10%)
+  );
+  --text-normal: rgb(214, 223, 226);
+  --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 45%)); 
+  --text-faint: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%));
+  --text-error: #800000;
+  --text-error-hover: #990000;
+
+  --text-highlight-bg: rgba(80, 98, 255, 0.3);;
+  --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
+  --text-selection: rgba(23, 48, 77, 0.99);
+  --text-on-accent: #dcddde;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #303030;
+  --interactive-accent: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-d) + 10%)
+  );
+  --interactive-accent-hover: hsl(
+    var(--accent-h),
+    var(--accent-s),
+    calc(var(--accent-l) - 0%)
+  );
+  --interactive-accent-rgb: 72, 54, 153;
+  --interactive-success: #197300;
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+  --scrollbar-bg: rgba(255, 255, 255, 0.05);
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+  --highlight-mix-blend-mode: lighten;
+}
+
+/* TAGS */
+.cm-s-obsidian span.cm-hashtag {
+  background-color: var(--background-modifier-border);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-tags);
+  /* color: inherit; */
+  /* font-size: var(--font-adaptive-small); */
+  /* font-family: var(--font-ui); */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 0;
+  vertical-align: middle;
+  border-left: none;
+  border-right: none;
+  cursor: text;
+}
+
+.cm-header-2 {
+  color: var(--text-title-h2) !important;
+}
+.cm-header-3 {
+  color: var(--text-title-h3) !important;
+}
+.cm-header-4 {
+  color: var(--text-title-h4) !important;
+}
+.cm-header-5 {
+  color: var(--text-title-h5) !important;
+}
+.cm-header-6 {
+  color: var(--text-title-h6) !important;
+}
+
+span.cm-hashtag.cm-hashtag-begin {
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  padding-left: 8px;
+  border-right: none;
+  border-left: 1px solid var(--background-modifier-border);
+}
+span.cm-hashtag.cm-hashtag-end {
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border-left: none;
+  padding-right: 8px;
+  border-right: 1px solid var(--background-modifier-border);
+}
+
+/* Heading indent */
+
+.HyperMD-header::before {
+  color: var(--text-heading-tags);
+  border: solid 1px;
+  padding: 3px;
+  border-radius: 5px;
+  font-family: var(--font-mono);
+}
+
+.HyperMD-header-1::before {
+  content: 'h1';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+  /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.HyperMD-header-2::before {
+  content: 'h2';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+
+}
+
+.HyperMD-header-3::before {
+  content: 'h3';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+}
+
+.HyperMD-header-4::before {
+  content: 'h4';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+}
+
+.HyperMD-header-5::before {
+  content: 'h5';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+}
+
+.HyperMD-header-6::before {
+  content: 'h6';
+  font-size:var(--font-adaptive-smaller);
+  margin-right: 20px !important;
+}
+
+.HyperMD-header ~ div:not(.HyperMD-header), 
+.HyperMD-header ~ .HyperMD-header ~ div:not(.HyperMD-header){
+  left: 50px !important;
+  font-family: var(--text);
+  /* font-weight: 100; */
+}
+
+.HyperMD-header-2 ~ div:not(.HyperMD-header), 
+.HyperMD-header-2 ~ .HyperMD-header-2 ~ div:not(.HyperMD-header){
+  /* padding-left: 40px !important; */
+}
+
+.image-embed{
+  padding-left: 50px !important;
+  font-family: var(--text);
+  /* font-weight: 100; */
+}
+
+/* underline */
+
+.cm-underline{
+  text-decoration: none !important;
+  color: var(--text-link);
+}
+
+/* CHECKBOXES (credit Minimal) */
+input[type="checkbox"] {
+  accent-color: var(--text-accent);
+}
+
+/* HEADING */
+
+
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6
+{
+  font-family: var(--font-family-editor);
+  /* font-weight: 500; */
+  /* font-weight: bold; */
+  /* border-bottom: thin solid var(--text-faint); */
+}
+
+/* Individual Mods */
+.cm-header-1
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h1);
+}
+
+.cm-header-2
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h2);
+}
+
+.cm-header-3
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h3);
+}
+
+.cm-header-4
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h4);
+}
+
+.cm-header-5
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h5);
+}
+
+.cm-header-6
+{
+  font-size: var(--font-heading-normaized);
+  color: var(--text-title-h6);
+}
