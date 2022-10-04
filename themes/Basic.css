@@ -240,76 +240,41 @@ span.cm-hashtag.cm-hashtag-end {
   font-size:var(--font-adaptive-smaller);
   border-radius: 5px;
   font-family: var(--font-mono);
+  margin-right: 20px !important;
 }
 
 .HyperMD-header-1::before {
   content: 'h1';
-  margin-right: 20px !important;
   /* font-family: 'Courier New', Courier, monospace; */
 }
 
 .HyperMD-header-2::before {
   content: 'h2';
-  margin-right: 30px !important;
 
 }
 
 .HyperMD-header-3::before {
   content: 'h3';
-  margin-right: 40px !important;
 }
 
 .HyperMD-header-4::before {
   content: 'h4';
-  margin-right: 50px !important;
 }
 
 .HyperMD-header-5::before {
   content: 'h5';
-  margin-right: 60px !important;
 }
 
 .HyperMD-header-6::before {
   content: 'h6';
-  margin-right: 70px !important;
 }
 
 .cm-content > .HyperMD-header ~ .cm-line:not(.HyperMD-header), 
 .HyperMD-header ~ .HyperMD-header ~ .cm-line:not(.HyperMD-header){
   font-family: var(--text);
-  margin-left: 40px !important;
-
-}
-
-.cm-content > .HyperMD-header-1 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-1 ~ .HyperMD-header-1 ~ .cm-line:not(.HyperMD-header){
-  margin-left: 40px !important;
-}
-
-.cm-content > .HyperMD-header-2 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-2 ~ .HyperMD-header-2 ~ .cm-line:not(.HyperMD-header){
   margin-left: 50px !important;
 }
 
-.cm-content > .HyperMD-header-3 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-3 ~ .HyperMD-header-3 ~ .cm-line:not(.HyperMD-header){
-  margin-left: 60px !important;
-}
-
-.cm-content > .HyperMD-header-4 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-4 ~ .HyperMD-header-4 ~ .cm-line:not(.HyperMD-header){
-  margin-left: 70px !important;
-}
-
-.cm-content > .HyperMD-header-5 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-5 ~ .HyperMD-header-5 ~ .cm-line:not(.HyperMD-header){
-  margin-left: 80px !important;
-}
-
-.cm-content > .HyperMD-header-6 ~ .cm-line:not(.HyperMD-header), 
-.cm-content > .HyperMD-header-6 ~ .HyperMD-header-6 ~ .cm-line:not(.HyperMD-header){
-  margin-left: 90px !important;
-}
 
 .image-embed{
   padding-left: 20px !important;
