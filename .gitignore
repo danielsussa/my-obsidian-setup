@@ -1,3 +1,4 @@
 workspace
 workspaces.json
 node_modules/
+.idea
