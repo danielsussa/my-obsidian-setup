@@ -9,6 +9,9 @@ import {
 import {RangeSetBuilder} from "@codemirror/state";
 // @ts-ignore
 
+interface MyPluginSettings {
+	mySetting: string;
+}
 
 
 const indentHeading = ViewPlugin.fromClass(class {
