@@ -178,7 +178,7 @@ body {
 
 /*  common colors*/
   --color-red: #573030;
-  --color-blue: #303a5b;
+  --color-blue: #354373;
   --color-yellow: #574e2c;
   --color-green: #396433;
 }
@@ -279,33 +279,31 @@ span.cm-hashtag.cm-hashtag-end {
   margin-right: 70px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line:not(.HyperMD-header),
-.HyperMD-header ~ .HyperMD-header ~ .cm-line:not(.HyperMD-header){
+.cm-content {
   font-family: var(--text);
-  /*margin-left: 40px !important;*/
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h1{
+.cm-content > .cm-line ~ .cm-line-child-h1{
   margin-left: 40px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h2{
+.cm-content > .cm-line ~ .cm-line-child-h2{
   margin-left: 50px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h3{
+.cm-content > .cm-line ~ .cm-line-child-h3{
   margin-left: 60px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h4{
+.cm-content > .cm-line ~ .cm-line-child-h4{
   margin-left: 70px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h5{
+.cm-content > .cm-line ~ .cm-line-child-h5{
   margin-left: 80px !important;
 }
 
-.cm-content > .HyperMD-header ~ .cm-line-child-h6{
+.cm-content > .cm-line ~ .cm-line-child-h6{
   margin-left: 90px !important;
 }
 
