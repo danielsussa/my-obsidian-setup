@@ -175,6 +175,12 @@ body {
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
+
+/*  common colors*/
+  --color-red: #573030;
+  --color-blue: #303a5b;
+  --color-yellow: #574e2c;
+  --color-green: #396433;
 }
 
 /* TAGS */
@@ -379,4 +385,26 @@ input[type="checkbox"] {
 
 .cm-active {
     background-color: var(--text-line-active);
+}
+
+/* Highlight colors*/
+
+.hltr-red{
+  background-color: var(--color-red) !important;
+  color: inherit;
+}
+
+.hltr-blue{
+  background-color: var(--color-blue) !important;
+  color: inherit;
+}
+
+.hltr-yellow{
+  background-color: var(--color-yellow) !important;
+  color: inherit;
+}
+
+.hltr-green{
+  background-color: var(--color-green) !important;
+  color: inherit;
 }
