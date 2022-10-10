@@ -10,6 +10,7 @@
   /* Editor - Live Preview */
   --text-live-preview: var(--text-normal);
 
+
   --text-editor: var(--text-normal);
   
   /* Code */
@@ -281,6 +282,10 @@ span.cm-hashtag.cm-hashtag-end {
 
 .cm-content {
   font-family: var(--text);
+}
+
+.HyperMD-codeblock{
+  font-family: var(--font) !important;
 }
 
 .cm-content > .cm-line ~ .cm-line-child-h1{

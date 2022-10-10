@@ -38,9 +38,8 @@ function indentHeadingExec(view: EditorView) {
 	for (const {from, to} of view.visibleRanges) {
 		for (let pos = 0; pos <= to;) {
 
-			const line = view.state.doc.lineAt(pos)
 			const lineText = view.state.doc.lineAt(pos)
-			pos = line.to + 1
+			pos = lineText.to + 1
 
 			if (lineText.text.startsWith("###### ")) {
 				currClass = "cm-line-child-h6"
@@ -67,7 +66,7 @@ function indentHeadingExec(view: EditorView) {
 				continue
 			}
 
-			builder.add(line.from, line.from, Decoration.line({
+			builder.add(lineText.from, lineText.from, Decoration.line({
 				attributes: {class: currClass}
 			}))
 
